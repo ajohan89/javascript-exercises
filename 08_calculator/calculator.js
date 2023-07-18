@@ -1,17 +1,28 @@
-const add = function() {
-	
+const add = function(x,y) {
+  const solution = (x + y);
+  return parseInt(solution);
 };
 
-const subtract = function() {
-	
+const subtract = function(x,y) {
+  const subSolution = (x - y);
+  return parseInt(subSolution);
 };
 
-const sum = function() {
-	
+const sum = function(x) {
+    let arr = [...x];
+    let sum = arr.reduce(function(a, b) {
+      return a + b;
+    }, 0);
+    return parseInt(sum);
 };
 
-const multiply = function() {
-
+const multiply = function(...x) {
+    const array = [...x];
+    var sum = 1;
+    for(var i=0; i<array.length; i++){
+        sum *= array[i];
+    }return sum;
+        
 };
 
 const power = function() {
